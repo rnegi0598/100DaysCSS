@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: white;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(68, 63, 161);
+  background: linear-gradient(45deg, rgb(68, 63, 161) 14%, rgb(77, 190, 200) 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#443fa1",endColorstr="#4dbec8",GradientType=1);
+  border-radius: 5px;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 180px;
+}
+.frame .center .numbers {
+  height: 100px;
+  position: relative;
+}
+.frame .center .numbers span {
+  display: inline-block;
+  box-shadow: 1px 1px 1px 0 gray;
+}
+.frame .center .numbers .one-before {
+  position: absolute;
+  width: 23px;
+  height: 45px;
+  background-color: white;
+  border-radius: 2px;
+  border-top-left-radius: 5px;
+  left: -18px;
+  top: -1px;
+  rotate: 50deg;
+  z-index: 3;
+}
+.frame .center .numbers .one {
+  margin: 0;
+  height: 100px;
+  width: 24px;
+  border-radius: 2px;
+  background-color: white;
+  z-index: 199;
+  position: absolute;
+}
+.frame .center .numbers .zero {
+  height: 100px;
+  width: 100px;
+  border: 24px solid white;
+  border-radius: 50%;
+  position: absolute;
+}
+.frame .center .numbers .first-zero {
+  z-index: 88;
+  left: 20px;
+}
+.frame .center .numbers .second-zero {
+  left: 100px;
+}
+.frame .center p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.frame .center .first-p {
+  height: 60px;
+  font-size: 4rem;
+  line-height: 60px;
+  letter-spacing: 10px;
+}
+.frame .center .second-p {
+  height: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  line-height: 20px;
+}/*# sourceMappingURL=index.css.map */
