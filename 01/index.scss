@@ -1,0 +1,103 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: white;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // linear gradient start
+    background: rgb(68, 63, 161);
+    background: -moz-linear-gradient(45deg, rgba(68, 63, 161, 1) 14%, rgba(77, 190, 200, 1) 76%);
+    background: -webkit-linear-gradient(45deg, rgba(68, 63, 161, 1) 14%, rgba(77, 190, 200, 1) 76%);
+    background: linear-gradient(45deg, rgba(68, 63, 161, 1) 14%, rgba(77, 190, 200, 1) 76%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#443fa1",endColorstr="#4dbec8",GradientType=1);
+    // linear gradient end
+    border-radius: 5px;
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 180px;
+        .numbers {
+            height: 100px;
+            position: relative;
+            span {
+                display: inline-block;
+                box-shadow: 1px 1px 1px 0 gray;
+            }
+            .one-before {
+                position: absolute;
+                width: 23px;
+                height: 45px;
+                background-color: white;
+                border-radius: 2px;
+                border-top-left-radius: 5px;
+                left: -18px;
+                top: -1px;
+                rotate: 50deg;
+                z-index: 3;
+            }
+            .one {
+                margin: 0;
+                height: 100px;
+                width: 24px;
+                border-radius: 2px;
+                background-color: white;
+                z-index: 199;
+                position: absolute;
+            }
+            .zero {
+                height: 100px;
+                width: 100px;
+                border: 24px solid white;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .first-zero {
+                z-index: 88;
+                left: 20px;
+            }
+            .second-zero {
+                left: 100px;
+            }
+        }
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .first-p {
+            height: 60px;
+            font-size: 4rem;
+            line-height: 60px;
+            letter-spacing: 10px;
+        }
+        .second-p {
+            height: 20px;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            line-height: 20px;
+        }
+    }
+}

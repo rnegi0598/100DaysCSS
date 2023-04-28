@@ -1,0 +1,155 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #3faf82;
+    color: #fff;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //
+
+    .menu {
+        width: 80px;
+        height: 52px;
+        cursor: pointer;
+        //when open
+        &.open .first-line {
+            animation: line-one-open 800ms ease forwards;
+        }
+        &.open .second-line {
+            animation: line-two-open 800ms ease forwards;
+        }
+        &.open .third-line {
+            animation: line-three-open 800ms ease forwards;
+        }
+
+        @keyframes line-one-open {
+            0% {
+                translate: 0;
+                rotate: 0deg;
+            }
+            50% {
+                translate: 0 22px;
+                rotate: 0deg;
+            }
+            100% {
+                translate: 0 22px;
+                rotate: 45deg;
+            }
+        }
+        @keyframes line-two-open {
+            0% {
+            }
+            50% {
+            }
+            100% {
+                opacity: 0;
+                background: #3faf82;
+            }
+        }
+
+        @keyframes line-three-open {
+            0% {
+                translate: 0;
+                rotate: 0deg;
+            }
+            50% {
+                translate: 0 -22px;
+                rotate: 0deg;
+            }
+            100% {
+                translate: 0 -22px;
+                rotate: 135deg;
+            }
+        }
+        // when close
+        &.close .first-line {
+            animation: line-one-close 800ms ease forwards;
+        }
+        &.close .second-line {
+            animation: line-two-close 800ms ease forwards;
+        }
+        &.close .third-line {
+            animation: line-three-close 800ms ease forwards;
+        }
+
+        @keyframes line-one-close {
+            0% {
+                translate: 0 22px;
+                rotate: 45deg;
+            }
+            50% {
+                translate: 0 22px;
+                rotate: 0deg;
+            }
+            100% {
+                translate: 0;
+                rotate: 0deg;
+            }
+        }
+        @keyframes line-two-close {
+            0% {
+                background: #3faf82;
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+                background: #3faf82;
+            }
+            100% {
+                background: white;
+            }
+        }
+
+        @keyframes line-three-close {
+            0% {
+                translate: 0 -22px;
+                rotate: 135deg;
+            }
+            50% {
+                translate: 0 -22px;
+                rotate: 0deg;
+            }
+            100% {
+                translate: 0;
+                rotate: 0deg;
+            }
+        }
+
+        .line {
+            height: 8px;
+            width: 80px;
+            border-radius: 2px;
+            background-color: white;
+            box-shadow: inset 1px 1px 1px lightgrey, 1px 1px 2px lightgrey;
+        }
+
+        .second-line {
+            margin: 14px 0;
+        }
+    }
+}
