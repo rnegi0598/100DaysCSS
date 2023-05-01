@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 45px;
+  overflow: hidden;
+}
+.carousel .pre {
+  height: 100%;
+}
+.carousel .element {
+  height: 100%;
+  font-weight: 900;
+  animation: up 8s ease-in-out forwards infinite;
+}
+.carousel .element:hover {
+  animation-play-state: paused;
+}
+@keyframes up {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-45px);
+  }
+  50%, 70% {
+    transform: translateY(-90px);
+  }
+  75%, 95% {
+    transform: translateY(-135px);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+.carousel .element p {
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
