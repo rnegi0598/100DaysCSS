@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #42a7a1;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  height: 220px;
+  width: 280px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color: black;
+}
+
+.header {
+  padding: 13px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #f1b758;
+  color: #fff;
+}
+.header .col-1 .title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+}
+.header .col-1 .range {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+.header .col-2 {
+  text-align: right;
+}
+.header .col-2 .title {
+  font-size: 0.7rem;
+}
+.header .col-2 .total {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.graph-wrapper .label {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.6rem;
+  gap: 10px;
+  padding: 10px;
+  color: #797979;
+}
+.graph-wrapper .label .views::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  background-color: orangered;
+  width: 18px;
+  height: 4px;
+}
+.graph-wrapper .label .purchases::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  background-color: rgb(76, 196, 236);
+  width: 18px;
+  height: 4px;
+}
+.graph-wrapper .line {
+  width: 90%;
+  margin: 3px auto;
+  border: 1px solid #dbd8d8;
+}
+.graph-wrapper svg {
+  width: 100%;
+  height: 30px;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+.graph-wrapper svg polyline {
+  fill: none;
+  border: 1px solid green;
+}
+.graph-wrapper .red {
+  stroke: red;
+}
+.graph-wrapper .blue {
+  stroke: blue;
+}
+.graph-wrapper .svg-blue,
+.graph-wrapper .svg-red {
+  position: relative;
+}
+.graph-wrapper .points-red div {
+  background-color: red;
+}
+.graph-wrapper .points-red .point1 {
+  top: 74%;
+  left: 8%;
+}
+.graph-wrapper .points-red .point2 {
+  top: 24%;
+  left: 17%;
+}
+.graph-wrapper .points-red .point3 {
+  top: 60%;
+  left: 32%;
+}
+.graph-wrapper .points-red .point4 {
+  top: -4%;
+  left: 46%;
+}
+.graph-wrapper .points-red .point5 {
+  top: 72%;
+  left: 61%;
+}
+.graph-wrapper .points-red .point6 {
+  top: 12%;
+  left: 75%;
+}
+.graph-wrapper .points-red .point7 {
+  top: 45%;
+  left: 88%;
+}
+.graph-wrapper .points-blue div {
+  background-color: blue;
+}
+.graph-wrapper .points-blue .point1 {
+  top: 74%;
+  left: 8%;
+}
+.graph-wrapper .points-blue .point2 {
+  top: 5%;
+  left: 17%;
+}
+.graph-wrapper .points-blue .point3 {
+  top: 25%;
+  left: 32%;
+}
+.graph-wrapper .points-blue .point4 {
+  top: 60%;
+  left: 46%;
+}
+.graph-wrapper .points-blue .point5 {
+  top: 24%;
+  left: 61%;
+}
+.graph-wrapper .points-blue .point6 {
+  top: 22%;
+  left: 75%;
+}
+.graph-wrapper .points-blue .point7 {
+  top: 64%;
+  left: 88%;
+}
+.graph-wrapper .points {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.graph-wrapper .points div {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.days {
+  color: gray;
+  font-size: 0;
+}
+.days .day {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 40px;
+  border-right: 1px solid gray;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 8px 5px;
+}/*# sourceMappingURL=style.css.map */
