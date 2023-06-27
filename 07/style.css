@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #264057;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+
+.behind {
+  position: absolute;
+  top: 25px;
+  width: 150px;
+  height: 250px;
+  background-color: #43627d;
+  color: #93b2cd;
+  z-index: 19;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.behind div {
+  padding-left: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.behind div:hover {
+  background-color: #385269;
+  color: white;
+  cursor: pointer;
+}
+
+.front {
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: pink;
+  height: 300px;
+  width: 300px;
+}
+.front .navbar {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5f98cd;
+  height: 50px;
+  color: #fff;
+}
+.front .navbar .menu {
+  cursor: pointer;
+}
+.front .navbar .menu:hover {
+  color: #333;
+}
+.front .navbar .search-icon {
+  cursor: pointer;
+}
+.front .navbar .search {
+  transition: opacity 0.9s ease-in-out;
+  position: absolute;
+}
+.front .navbar .search input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  width: 95%;
+  height: 30px;
+}
+.front .main {
+  height: 250px;
+  position: relative;
+  background-color: #ffffff;
+}
+.front .main .line {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 250px;
+  height: 2px;
+  rotate: 90deg;
+  transform-origin: 0%;
+  background-color: lightgray;
+}
+.front .main .timeline {
+  position: relative;
+  margin: 0 30px;
+  padding-top: 20px;
+}
+.front .main .timeline .time {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.front .main .timeline .text {
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
+.front .main .timeline::before {
+  content: "";
+  border: 5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+}
+.front .main .timeline:hover {
+  color: #5f98cd;
+  cursor: pointer;
+}
+
+.hide {
+  opacity: 0;
+  top: 50px;
+}
+
+.move {
+  left: 150px;
+}/*# sourceMappingURL=style.css.map */
